@@ -45,7 +45,7 @@ submissions/
 | 1 | ByteX | [745 - ByteX](submissions/745%20-%20ByteX) |
 | 2 | Chetan's Fans | [1282 - Chetan's Fans](submissions/1282%20-%20Chetan%27s%20Fans) |
 | 3 | Momoney621 | [541 - Momoney621](submissions/541%20-%20Momoney621) |
-| 4 | Yusuf and Rohan  | [601 - Yusuf and Rohan](submissions/601%20-%20Yusuf%20and%20Rohan) |
+| 4 | Yusuf and Rohan | [601 - Yusuf and Rohan](submissions/601%20-%20Yusuf%20and%20Rohan) |
 | 5 | praneel | [1 - praneel](submissions/1%20-%20praneel) |
 | 6 | Segmentation Fault | [656 - Segmentation Fault](submissions/656%20-%20Segmentation%20Fault) |
 | 7 | Umar Shareef | [1445 - Umar Shareef](submissions/1445%20-%20Umar%20Shareef) |
