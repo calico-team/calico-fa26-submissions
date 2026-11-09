@@ -1,0 +1,50 @@
+"""
+* Return an integer denoting the amount of rain collected after the Kth nights 
+*
+* N: Number of drones
+* K: Number of nights
+* L: a list in this order [X, Y, Z, D] for each drone
+*   X: Starting X location of Drone
+*   Y: Starting Y location of Drone
+*   Z: Starting Z location of Drone
+*   D: Starting direction of Drone
+"""
+
+def solve(N: int, K: int, L: list):
+    rainCount = 0
+    above = [[] for o in range(N)]
+    for m in range(N):
+        for n in range(N):
+            if L[m][2] < L[n][2] and L[m][3] != L[n][3]:
+                if (L[m][0] < L[n][0] and L[m][3] == "W") or (L[m][1] < L[n][1] and L[m][3] == "N"):
+                    above[m].append(n)
+    for i in range(K):
+        for j in range(N):
+            rainCatch = True
+            for k in above[j]:
+                if ((L[j][0] == L[k][0] and L[j][1] == L[k][1])):
+                    rainCatch = False
+                    continue
+            if rainCatch:
+                rainCount += 1
+        for l in range(N):
+            if (L[l][3] == "N"):
+                L[l][1] += 1
+            else:
+                L[l][0] += 1
+
+    return rainCount
+
+def main():
+    T = int(input())
+    for _ in range(T):
+        N, K = map(int, input().split())
+        L = []
+        for _ in range(N):
+            X, Y, Z, D = input().split()
+            L.append([int(X), int(Y), int(Z), D])
+
+        print(solve(N, K, L))
+
+if __name__ == '__main__':
+    main()

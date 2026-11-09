@@ -1,0 +1,31 @@
+# a = "solve_all_of_the_rank_4_problems_"
+
+T = int(input())
+
+for _ in range(T):
+    S = input()
+    a = S.split("_")
+
+    for i in a:
+        # i = i.lower()
+
+        if i == "write":
+            a.append("make_it_sound_human")
+            break
+
+        elif i == "what":
+            a.append("do_not_hallucinate")
+            break
+
+        elif i == "solve":
+            a.append("make_no_mistakes")
+            break
+
+        else:
+            continue
+        
+    else:
+        a.append("thank_you")
+
+
+    print("_".join(a))

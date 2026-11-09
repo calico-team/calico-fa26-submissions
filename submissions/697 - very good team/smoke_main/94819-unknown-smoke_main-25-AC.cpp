@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+constexpr int maxN = 1e6 + 1;
+int N, R, T;
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    cin >> T;
+
+    for (int z = 0; z < T; z++)
+    {
+        int charges = 2;
+        cin >> N >> R;
+        ll tot = 0;
+        int prev = 0;
+        bool result = true;
+        for (int i = 0; i < N; i++)
+        {
+            int n; cin >> n;
+            tot += n - prev;
+            if (tot >= R) charges = min(2LL, charges + tot / R);
+            tot %= R;
+            if (charges == 2) tot = 0;
+            if (charges != 0) charges--;
+            else result = false;
+            prev = n;
+        }
+        cout << (result ? "YES" : "NO") << "\n";
+    }
+}

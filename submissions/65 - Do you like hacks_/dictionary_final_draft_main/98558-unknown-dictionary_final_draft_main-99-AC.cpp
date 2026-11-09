@@ -1,0 +1,165 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+const int N=2e5+5, M=60*N;
+int a[N], b[N];
+vector<int> e[N];
+int rd[N];
+int vis[N];
+int son[M][2], siz[M], fa[M], cnt=1;
+void modify(int x, int v, int dt){
+    for(int i=29; i>=0; --i){
+        int c=v>>i&1;
+        if(!son[x][c]) son[x][c]=++cnt, fa[cnt]=x;
+        x=son[x][c];
+    }
+    while(x){
+        siz[x]+=dt;
+        x=fa[x];
+    }
+}
+int query(int x, int v){
+    int ans=0;
+    for(int i=29; i>=0; --i){
+        int c=v>>i&1;
+        if(son[x][c^1]&&siz[son[x][c^1]]) c^=1, ans^=1<<i;
+        assert(son[x][c]&&siz[son[x][c]]);
+        x=son[x][c];
+    }
+    return ans;
+}
+int res[N];
+void dfs(int x, int ff, int rt, int pre, int bs){
+    if(x!=rt) pre^=b[x];
+    // cerr << "DEBUG: " << x << ' ' << pre << ' ' << bs << '\n';
+    res[x]=query(1,pre);
+    modify(1,pre,1);
+    for(auto y:e[x]){
+        if(y==ff||y==rt) continue;
+        dfs(y, x, rt, pre, bs);
+    }
+    modify(1,pre,-1);
+}
+const int V=1<<16;
+mt19937 R(31415926);
+
+int main(){
+    ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    int T;
+    cin >> T;
+    while(T--){
+        int n = 16;
+        // cerr << n << '\n';
+        cin >> n;
+        for(int i=1; i<=n; ++i){
+            rd[i]=0;
+            res[i]=-1;
+            e[i].clear();
+        }
+        for(int i=1; i<=n; ++i){
+            cin >> a[i];
+            // a[i]=R()%n+1;
+            // cerr << a[i] << " \n"[i==n];
+            rd[a[i]]++;
+            e[a[i]].push_back(i);
+        }
+        for(int i=1; i<=n; ++i){
+            cin >> b[i];
+            // b[i]=R()%V;
+            // cerr << b[i] << " \n"[i==n];
+        }
+        {
+            queue<int> q;
+            for(int i=1; i<=n; ++i){
+                if(!rd[i]) q.push(i);
+            }
+            while(!q.empty()){
+                int x=q.front(); q.pop();
+                rd[a[x]]--; if(!rd[a[x]]) q.push(a[x]);
+            }
+        }
+        for(int i=1; i<=n; ++i){
+            vis[i]=0;
+        }
+        for(int i=1; i<=n; ++i){
+            if(rd[i]&&!vis[i]){
+                int x=i;
+                int v=0;
+                do{
+                    modify(1,v,1);
+                    v^=b[x], vis[x]=1;
+                    x=a[x];
+                }while(x!=i);
+                int bs=v;
+                do{
+                    modify(1,v,1);
+                    v^=b[x], x=a[x];
+                }while(x!=i);
+                dfs(x,0,x,0,bs);
+                do{
+                    modify(1,v,-1);
+                    v^=b[x], x=a[x];
+                }while(x!=i);
+                do{
+                    modify(1,v,-1);
+                    v^=b[x], x=a[x];
+                }while(x!=i);
+            }
+        }
+        // for(int i=1; i<=n; ++i){
+        //     int mx=0;
+        //     int x=i, v=0;
+        //     for(int j=0; j<=2*n; ++j){
+        //         v^=b[x], x=a[x], mx=max(mx, v);
+        //     }
+        //     cerr << mx << ' ' << res[i] << '\n';
+        //     assert(mx==res[i]);
+        // }
+        // cout << "Result: ";
+        for(int i=1; i<=n; ++i){
+            cout << res[i] << " \n"[i==n];
+        }
+        // cerr << "";
+    }
+    return 0;
+}
+
+/*
+1
+8
+2 3 4 1 6 7 8 5
+0 1 0 1 1 2 5 8
+
+1
+8
+2 3 4 1 1 2 6 7
+17 39 13 32 47 25 16 15
+
+1
+8
+2 3 4 1 1 2 6 7
+17 39 13 32 47 25 16 15
+
+1
+8
+2 4 1 3 1 5 6 6
+6 0 35 54 62 17 17 7
+
+1
+10
+10 8 4 3 10 10 1 2 7 10
+55144 757469 13175 441574 207714 417714 122717 252070 894534 391762
+
+1
+16
+8 6 13 1 4 9 16 8 14 4 16 14 13 2 5 9
+10 6 1 13 15 4 15 3 3 2 9 8 6 1 11 7
+
+*4
+
+1
+4
+1 4 2 1
+2 1 1 3
+
+*/

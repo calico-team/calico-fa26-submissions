@@ -1,0 +1,66 @@
+# ██████╗ ███████╗ █████╗ ██████╗     ██╗  ██╗██╗██╗     ██╗     ███████╗██████╗
+# ██╔══██╗██╔════╝██╔══██╗██╔══██╗    ██║ ██╔╝██║██║     ██║     ██╔════╝██╔══██╗
+# ██║  ██║█████╗  ███████║██║  ██║    █████╔╝ ██║██║     ██║     █████╗  ██████╔╝
+# ██║  ██║██╔══╝  ██╔══██║██║  ██║    ██╔═██╗ ██║██║     ██║     ██╔══╝  ██╔══██╗
+# ██████╔╝███████╗██║  ██║██████╔╝    ██║  ██╗██║███████╗███████╗███████╗██║  ██║
+# ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═════╝     ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
+#          ☠  D E A D   K I L L E R'S   T E M P L A T E  ☠
+
+# ============================== IMPORTS ================================= #
+import sys
+from collections import defaultdict,Counter,deque
+
+# ============================== CONSTANTS ================================= #
+posINF = float('inf')
+negINF = float('-inf')
+
+# ============================== ULTRA FAST IO ================================= #
+
+input = sys.stdin.readline
+write = sys.stdout.write
+
+def inp(): return input().strip()
+def intInp(): return int(inp())
+def mapInt(): return map(int, inp().split())
+def mapStr(): return map(str, inp().split())
+def listInt(): return list(map(int, inp().split()))
+def listStr(): return list(map(str, inp().split()))
+def listFloat(): return list(map(float, inp().split()))
+def digsOfNum(X): return list(map(int,list(str(X))))
+
+# Fast Output Helpers
+def printLine(x): write(str(x) + "\n")
+def printArr(arr): write(" ".join(map(str, arr)) + "\n")
+def printYes(): write("YES\n")
+def printNo(): write("NO\n")
+
+
+# ============================== SOLVE FUNCTION ================================= #
+
+def solve():
+    N,R = mapInt()
+    arr = listInt()
+    stk = deque([R])
+    for i in range(N-1):
+        diff = arr[i+1] - arr[i]
+        if stk:
+            while stk and diff >= stk[-1]:
+                diff -= stk.popleft()
+        if stk:
+            stk[0] -= diff
+        if len(stk)==2: 
+            print("NO")
+            return
+        else:
+            stk.append(R)
+    print("YES")
+
+# ============================== MAIN DRIVER ==================================== #
+
+def main():
+    for _ in range(intInp()): solve()
+
+# ============================== EXECUTION ====================================== #
+
+if __name__ == "__main__":
+    main()

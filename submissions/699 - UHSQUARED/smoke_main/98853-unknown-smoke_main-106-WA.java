@@ -1,0 +1,67 @@
+import java.io.*;
+
+class Solution {
+
+    /*
+     * Output whether all of the requests can be fulfilled.
+     *
+     * N: Number of smoke requests
+     * R: Number of seconds needed for a smoke charge to recharge
+     * A: List of timestamps where smokes are requested
+     */
+    static String solve(int N, int R, int[] A) {
+        boolean x = false;
+        int charges = 2;
+        int timeBetween = 0;
+        int k = 0;
+        for (int i = 0; i < N - 1; i++)
+        {
+            timeBetween = A[i + 1] - A[i];
+            if ((A[i + 1] - A[i]) < R )
+            {
+                charges--;
+                if (charges == 0);
+                {
+                    System.out.println(x);
+                    break;
+                }
+            }
+            if (charges < 2)
+            {
+                if (timeBetween > R)
+                {
+                    charges++;
+                }
+            }
+            k++;
+        }
+        if (k == N - 1)
+        {
+            x = true;
+            System.out.println(x);
+        }
+        return "";
+    }
+
+    static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+    static PrintWriter out = new PrintWriter(System.out);
+
+    public static void main(String[] args) throws IOException {
+        int T = Integer.parseInt(in.readLine());
+
+        for (int i = 0; i < T; i++) {
+            String[] temp = in.readLine().split(" ");
+            int N = Integer.parseInt(temp[0]);
+            int R = Integer.parseInt(temp[1]);
+
+            int[] A = new int[N];
+            String[] req = in.readLine().split(" ");
+            for (int j = 0; j < N; j++) {
+                A[j] = Integer.parseInt(req[j]);
+            }
+
+            out.println(solve(N, R, A));
+        }
+        out.flush();
+    }
+}

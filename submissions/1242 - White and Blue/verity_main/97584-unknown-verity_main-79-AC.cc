@@ -1,0 +1,78 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+string read_string();
+void print_guess(string guess);
+
+/*
+ * Print a sequence of guesses until you guess the answer string.
+ * You may use the read_string() and print_guess() helper functions defined
+ * below.
+ *
+ * N: Length of the string
+ * K: Number of different -ities
+ * A: List containing the different -ities
+ */
+void solve(int N, int K, vector<char> &A) {
+  string ans = "";
+  for (int i = 0; i < N; ++i) {
+    ans += "_";
+  }
+
+  for (int i = 0; i < K; ++i) {
+
+    string buf = "";
+    for (int j = 0; j < N; ++j) {
+      if (ans[j] != '_')
+        buf += ans[j];
+      else
+        buf += A[i];
+    }
+
+    print_guess(buf);
+
+    buf = read_string();
+
+    if (buf == "CORRECT")
+      return;
+
+    for (int j = 0; j < N; ++j) {
+      if (buf[j] != '_')
+        ans[j] = buf[j];
+    }
+  }
+}
+
+/*
+ * Reads a single string from standard input.
+ */
+string read_string() {
+  string s;
+  cin >> s;
+  return s;
+}
+
+/*
+ * Prints a guess to standard output and flushes the output stream buffer.
+ */
+void print_guess(string guess) { cout << guess << endl; }
+
+int main() {
+  int T;
+  cin >> T;
+
+  for (int i = 0; i < T; i++) {
+    int N, K;
+    cin >> N >> K;
+
+    vector<char> A(K);
+    for (int j = 0; j < K; j++) {
+      cin >> A[j];
+    }
+
+    solve(N, K, A);
+  }
+
+  return 0;
+}

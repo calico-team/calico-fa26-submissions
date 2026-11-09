@@ -1,0 +1,29 @@
+def solve(N, R, A):
+    
+    recharge=[0,0]
+    for j in A:
+        for i in range(0,2):
+            if recharge[i] != 0 and recharge[i]<=j:
+                recharge[i]=0
+        for i in range(0,2):
+            if recharge[i]== 0:
+                recharge[i]=j+R
+                break
+        else:
+            return "NO"
+        
+    return "YES"
+
+
+def main():
+    T = int(input())
+    for _ in range(T):
+        temp = input().split()
+        N = int(temp[0])
+        R = int(temp[1])
+        A = list(map(int, input().split()))
+        print(solve(N, R, A))
+
+
+if __name__ == '__main__':
+    main()

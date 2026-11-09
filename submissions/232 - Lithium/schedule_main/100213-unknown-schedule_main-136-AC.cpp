@@ -1,0 +1,98 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int p[10005];
+int d[10005];
+int a[10005]; // used
+int b[1005]; // number of things left
+vector<int> adj[10005];
+
+void dfs(int node) {
+    d[node] = d[p[node]]+1;
+    for (auto i:adj[node]) {
+        dfs(i);
+    }
+}
+
+void solve() {
+    int n,m,k;
+    cin >> n >> m >> k;
+    // n = 10000;
+    // m = 100;
+    // k = 10;
+    int ans = 0;
+    for (int i = 0; i <= n; i++) {
+        p[i] = 0;
+        d[i] = 0;
+        a[i] = 0;
+        adj[i] = {};
+    }
+    for (int i = 0; i <= 1000; i++) {
+        b[i] = 0;
+    }
+    for (int i = 1; i <= min(m,1000); i++) {
+        b[i] += (m-i+1)*k;
+    }
+    for (int i = 1; i <= n; i++) {
+        cin >> p[i];
+        // p[i] = 0;
+        if (p[i] == 0) {
+            d[i] = 1;
+        }
+        adj[p[i]].push_back(i);
+    }
+    for (auto i:adj[0]) {
+        dfs(i);
+    }
+    vector<int> v;
+    for (int i = 1; i <= n; i++) {
+        v.push_back(i);
+    }
+    sort(v.begin(),v.end(),[](int a, int b) {return d[a] > d[b];});
+    for (int i = 0; i < n; i++) {
+        int node = v[i];
+        if (b[d[node]] == 0) {
+            continue;
+        }
+        int x = 0;
+        bool f = 1;
+        
+        while (node != 0) {
+            if (a[node] == 0) {
+                x++;
+            }
+            if (b[d[node]] < x) {
+                // assert(0);
+                f = 0;
+                break;
+            }
+            node = p[node];
+        }
+        if (f) {
+            x = 0;
+            node = v[i];
+            while (node != 0) {
+                if (a[node] == 0) {
+                    ans++;
+                    x++;
+                }
+                b[d[node]] -= x;
+                assert(b[d[node]] >= 0);
+                a[node] = 1;
+                node = p[node];
+            }
+        }
+    }
+    cout << ans << "\n";
+}
+
+
+int main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+}

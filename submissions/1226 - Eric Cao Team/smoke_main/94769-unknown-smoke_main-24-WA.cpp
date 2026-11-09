@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    int r;
+    cin >> n >> r;
+    int charges = 2;
+    int next = 0;
+    bool possible = true;
+    for (int i = 0; i < n; i++){
+        int a;
+        cin >> a;
+        while (charges < 2 && next <= a){
+            charges++;
+            next += r;
+        }
+        if (charges == 0) possible = false;
+        else {
+            if (charges == 2) next = a + r;
+            charges--;
+        }
+    }
+
+    if (possible){
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
+}

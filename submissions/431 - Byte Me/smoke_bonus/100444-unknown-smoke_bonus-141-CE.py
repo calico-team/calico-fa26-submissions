@@ -1,0 +1,27 @@
+T = int(input())
+
+for i in range(T):
+    N, R = map(int, input().split())
+    A= list(map(int, input().split()))
+
+    charges= 2
+    recharge = 0
+    poss = True
+
+    for time in A:
+        if charges<2:
+            if recharge<=time:
+                charges +=1
+                recharge +=R
+                if recharge<= time and charges <2:
+                charges+=1
+        if charges == 0:
+            poss = False
+            break
+        if charges ==2:
+            recharge = time+R
+        charges -=1
+    if poss:
+        print("YES")
+    else:
+        print("NO")

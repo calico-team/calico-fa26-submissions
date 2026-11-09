@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+#define int long long
+#define INF 1e18
+
+int n, m, k;
+vector<vector<int>> g;
+vector<int> dp;
+
+void dfs(int u, int l) {
+	if (l == m) return;
+	vector<int> add;
+	for (int v : g[u]) {
+		dfs(v, l+1);
+		add.push_back(dp[v]+1);
+	}
+	sort(add.begin(), add.end());
+	for (int i = 0; i < min((int)add.size(), (int)k); i++) {
+		dp[u] += add[i];
+	}
+}
+
+signed main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0); cout.tie(0);
+    int t;
+    cin >> t;
+    while (t--) {
+		cin >> n >> m >> k;
+		g = vector<vector<int>> (n+1);
+		dp = vector<int> (n, 0);
+		for (int i = 1; i <= n; i++) {
+			int p;
+			cin >> p;
+			g[p].push_back(i);
+		}
+		dfs(0, 0);
+		cout << dp[0] << endl;
+	}
+}

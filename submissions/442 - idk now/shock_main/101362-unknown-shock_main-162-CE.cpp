@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+using namespace std;
+using std::cout;
+#define int long long
+
+int n,m;
+vector<vector<int>> link;
+int find(int r, int x) {
+    if (x!=link[r][x]) x=find(r, link[r][x]);
+    return link[r][x];
+}
+void q8() {
+    int q; cin>>n>>m>>q;
+    link.assign(n, vector<int>(m+1));
+    vector<int> x(q), y(q), p(q);
+    for (int i=q-1; i>=0; i--) cin>>x[i]>>y[i]>>p[i];
+    for (int i=0; i<n; i++) {
+        for (int j=0; j<=m; j++) link[i][j]=j;
+    }
+    vector<vector<int>> ans(n, vector<int>(m, 0));
+    for (int i=0; i<q; i++) {
+        for (int r=x[i]-p[i]; r<=x[i]+p[i]; r++) {
+            int rad=sqrtl(p[i]*p[i]-(r-x[i])*(r-x[i]));
+            int c=find(r, y[i]-rad);
+            while (c<=y[i]+rad) {
+                ans[r][c]=p[i]*p[i]-(r-x[i])*(r-x[i])-(c-y[i])*(c-y[i])+1;
+                link[r][c]=find(r, c+1);
+                c=find(r, c);
+            }
+        }
+    }
+    for (int i=0; i<n; i++) {
+        for (int j=0; j<m; j++) {
+            cout<<ans[i][j]<<" ";
+        }
+        cout<<"\n";
+    }
+}
+
+signed main() {
+    ios::sync_with_stdio(0); 
+    cin.tie(0); cout.tie(0);
+    int TC=1; cin>>TC;
+    while (TC--) q8();
+    return 0;
+}

@@ -1,0 +1,602 @@
+[
+  {
+    "submission_id": "93639",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "prompt_main",
+    "contest_time": "-0:43:18.086",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93640",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "prompt_main",
+    "contest_time": "-0:43:15.532",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93641",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "prompt_main",
+    "contest_time": "-0:43:13.774",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93642",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "prompt_main",
+    "contest_time": "-0:43:09.013",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93643",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_main",
+    "contest_time": "-0:42:48.831",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93644",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_main",
+    "contest_time": "-0:42:47.214",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93645",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_main",
+    "contest_time": "-0:42:45.543",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93646",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_main",
+    "contest_time": "-0:42:41.646",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93647",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_main",
+    "contest_time": "-0:42:39.342",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93648",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_main",
+    "contest_time": "-0:42:37.649",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93649",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_main",
+    "contest_time": "-0:42:32.769",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93650",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_bonus",
+    "contest_time": "-0:42:14.336",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93651",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_bonus",
+    "contest_time": "-0:42:12.565",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93652",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_bonus",
+    "contest_time": "-0:42:10.959",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93653",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_bonus",
+    "contest_time": "-0:42:07.731",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93654",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_bonus",
+    "contest_time": "-0:42:05.746",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93655",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_bonus",
+    "contest_time": "-0:42:04.033",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93656",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "smoke_bonus",
+    "contest_time": "-0:42:01.121",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93657",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "verity_main",
+    "contest_time": "-0:41:39.292",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93658",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "verity_main",
+    "contest_time": "-0:41:35.941",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93659",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "verity_main",
+    "contest_time": "-0:41:33.908",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93660",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "rain_main",
+    "contest_time": "-0:41:03.374",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93661",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "rain_main",
+    "contest_time": "-0:41:01.572",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93662",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "rain_main",
+    "contest_time": "-0:40:59.854",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93669",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy_main",
+    "contest_time": "-0:40:06.814",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93670",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy_main",
+    "contest_time": "-0:40:05.079",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93671",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy_main",
+    "contest_time": "-0:40:03.342",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93672",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy_main",
+    "contest_time": "-0:39:59.941",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93673",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy_main",
+    "contest_time": "-0:39:58.067",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93674",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy_main",
+    "contest_time": "-0:39:56.358",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93675",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy_bonus",
+    "contest_time": "-0:39:44.559",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93676",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy_bonus",
+    "contest_time": "-0:39:42.059",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93677",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy_bonus",
+    "contest_time": "-0:39:40.358",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93678",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy_bonus",
+    "contest_time": "-0:39:37.816",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93679",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy_bonus",
+    "contest_time": "-0:39:35.726",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93680",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy_bonus",
+    "contest_time": "-0:39:33.957",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93681",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "schedule_main",
+    "contest_time": "-0:39:14.300",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93682",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "schedule_main",
+    "contest_time": "-0:39:11.743",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93683",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "schedule_main",
+    "contest_time": "-0:39:08.033",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93684",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "schedule_main",
+    "contest_time": "-0:39:06.100",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93685",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "schedule_main",
+    "contest_time": "-0:39:03.963",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93686",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "schedule_main",
+    "contest_time": "-0:39:02.209",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93687",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "forgor_main",
+    "contest_time": "-0:37:56.870",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93688",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "forgor_main",
+    "contest_time": "-0:37:55.355",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93689",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "shock_main",
+    "contest_time": "-0:37:17.532",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93690",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "shock_main",
+    "contest_time": "-0:37:15.140",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93691",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "shock_main",
+    "contest_time": "-0:37:12.869",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93692",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "shock_main",
+    "contest_time": "-0:37:10.788",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93693",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "shock_main",
+    "contest_time": "-0:37:08.666",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93694",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "shock_main",
+    "contest_time": "-0:37:06.504",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93695",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "shock_main",
+    "contest_time": "-0:37:04.321",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93696",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "shock_main",
+    "contest_time": "-0:37:02.215",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93697",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy2_main",
+    "contest_time": "-0:36:47.697",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93698",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy2_main",
+    "contest_time": "-0:36:46.155",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93699",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy2_main",
+    "contest_time": "-0:36:44.572",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93700",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "galaxy2_main",
+    "contest_time": "-0:36:41.079",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93702",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "matcha_main",
+    "contest_time": "-0:25:40.466",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93703",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "matcha_main",
+    "contest_time": "-0:25:38.874",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93704",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "matcha_main",
+    "contest_time": "-0:25:37.250",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  },
+  {
+    "submission_id": "93707",
+    "team_id": "e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "team_name": "Team e8f60e2d-8554-4c66-af57-5ee61eb24a1c",
+    "username": "unknown",
+    "problem_id": "dictionary_final_draft_main",
+    "contest_time": "-0:21:36.394",
+    "contest_time_minutes": 0,
+    "reason": "Submitted before contest start"
+  }
+]

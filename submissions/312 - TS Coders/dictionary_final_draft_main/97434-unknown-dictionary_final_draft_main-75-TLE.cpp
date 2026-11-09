@@ -1,0 +1,3 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){ios::sync_with_stdio(false);cin.tie(nullptr);int T;cin>>T;while(T--){int n;cin>>n;vector<int>a(n),v(n);for(int &x:a){cin>>x;--x;}for(int &x:v)cin>>x;vector<int>ans(n);for(int s=0;s<n;s++){unordered_set<int>seen;int x=s,h=0,best=0;while(!seen.count(x)){seen.insert(x);h^=v[x];best=max(best,h);x=a[x];}int cycleStart=x;int cycleXor=0;vector<int> cyc;do{cyc.push_back(x);cycleXor^=v[x];x=a[x];}while(x!=cycleStart);if(cycleXor){int cur=h;for(int z=0;z<(int)cyc.size();z++){cur^=v[cyc[z]];best=max(best,cur);} }ans[s]=best;}for(int i=0;i<n;i++)cout<<ans[i]<<(i+1==n?'\n':' ');}}

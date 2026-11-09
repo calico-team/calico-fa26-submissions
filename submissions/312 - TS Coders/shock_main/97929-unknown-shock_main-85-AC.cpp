@@ -1,0 +1,4 @@
+#include <bits/stdc++.h>
+using namespace std;
+struct Event{int r,c,p;};
+int main(){ios::sync_with_stdio(false);cin.tie(nullptr);int T;cin>>T;while(T--){int n,m,q;cin>>n>>m>>q;vector<Event> e(q);for(auto &x:e)cin>>x.r>>x.c>>x.p;vector<vector<int>> ans(n,vector<int>(m));vector<vector<int>> nxt(n,vector<int>(m+1));for(int r=0;r<n;r++)iota(nxt[r].begin(),nxt[r].end(),0);function<int(int,int)> find=[&](int r,int x){return nxt[r][x]==x?x:nxt[r][x]=find(r,nxt[r][x]);};for(int z=q-1;z>=0;z--){auto [cr,cc,p]=e[z];for(int r=max(0,cr-p);r<=min(n-1,cr+p);r++){long long rem=1LL*p*p-1LL*(r-cr)*(r-cr);if(rem<0)continue;int d=sqrt((long double)rem);int l=max(0,cc-d),h=min(m-1,cc+d);for(int c=find(r,l);c<=h;c=find(r,c)){long long val=1LL*p*p-1LL*(r-cr)*(r-cr)-1LL*(c-cc)*(c-cc)+1;ans[r][c]=(int)val;nxt[r][c]=find(r,c+1);}}}for(auto &row:ans){for(int j=0;j<m;j++)cout<<row[j]<<(j+1==m?'\n':' ');}}}
