@@ -1,0 +1,45 @@
+
+from collections import defaultdict
+from bisect import bisect_left, bisect_right
+"""
+* Return an integer denoting the amount of rain collected after the Kth nights 
+*
+* N: Number of drones
+* K: Number of nights
+* L: a list in this order [X, Y, Z, D] for each drone
+*   X: Starting X location of Drone
+*   Y: Starting Y location of Drone
+*   Z: Starting Z location of Drone
+*   D: Starting direction of Drone
+"""
+def solve(N:int, K:int, L:list):
+    groups = defaultdict(lambda: [[], []])
+
+    for x, y, z, d in L:
+        if d == "E":
+            groups[x+y][0].append(x)
+        else:
+            groups[x+y][1].append(x)
+
+    collisions = 0
+
+    for east, north in groups.values():
+        north.sort()
+
+        for x in east:
+            left = bisect_left(north, x)
+            right = bisect_right(north, x+K-1)
+            collisions += right-left
+
+    return N*K-collisions
+def main():
+    T=int(input())
+    for _ in range(T):
+        N,K=map(int,input().split())
+        L = []
+        for _ in range(N):
+            X, Y, Z, D = input().split()
+            L.append((int(X),int(Y),int(Z),D))
+        print(solve(N,K,L))
+if __name__=='__main__':
+    main()
